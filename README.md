@@ -35,7 +35,7 @@ Create README.md & .gitignore
 
 ## Step 1. Initialise backend
 
-``` bash
+```bash
 # make backend folder
 mkdir backend && cd backend
 
@@ -46,15 +46,15 @@ npm init -y
 npm install express mongoose cors dotenv nodemon
 ```
 
-express - web framework for building the API routes
+1. express - web framework for building the API routes
 
-mongoose – ODM (object data modeling) library to interact with MongoDB
+2. mongoose – ODM (object data modeling) library to interact with MongoDB
 
-cors – middleware to allow requests from the frontend (different origin)
+3. cors – middleware to allow requests from the frontend (different origin)
 
-dotenv – loads environment variables (like DB connection string) from .env
+4. dotenv – loads environment variables (like DB connection string) from .env
 
-nodemon – dev tool that auto-restarts the server when code changes
+5. nodemon – dev tool that auto-restarts the server when code changes
 
 Update package.json scripts (backend) for dev and add type "module":
 ```json
