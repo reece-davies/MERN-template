@@ -69,11 +69,9 @@ function App() {
       </form>
 
       {/* List all items */}
-      <ul>
         {items.map((i) => (
           <p key={i._id}> {i.name} – {i.description} </p>
         ))}
-      </ul>
     </div>
   );
 }
