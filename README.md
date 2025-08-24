@@ -185,7 +185,7 @@ npm create vite@latest .   # choose React
 npm install
 ```
 
-## Step 5. (Optional) Create VITE .env
+## Step 5. (Optional) Create VITE environment variables
 backend/.env
 ```
 VITE_API_URL=https://<your-codespace-id>-5000.app.github.dev
@@ -283,7 +283,7 @@ export default App;
 
 React app now runs GET request (& contains form to run POST request) to backend API
 
-## Step 7. Run both servers in Codespace
+## Step 7. Run both servers
 Open two terminals:
 
 Backend:
