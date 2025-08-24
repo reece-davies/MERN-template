@@ -11,10 +11,11 @@ function App() {
 
   // fetch all items on load
   useEffect(() => {
+    console.log(apiUrl);
     fetch(`${apiUrl}/api/items`)
       .then((res) => res.json())
       .then((data) => setItems(data))
-      .catch((err) => console.error("Error fetching items:", err));
+      .catch((err) => console.error("Error fetching items:", err.message));
   }, [apiUrl]);
 
   // handle form submit (add new item)
@@ -70,9 +71,7 @@ function App() {
       {/* List all items */}
       <ul>
         {items.map((i) => (
-          <li key={i._id}>
-            <strong>{i.name}</strong> – {i.description}
-          </li>
+          <p key={i._id}> {i.name} – {i.description} </p>
         ))}
       </ul>
     </div>

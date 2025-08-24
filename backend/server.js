@@ -17,12 +17,13 @@ app.use("/api/items", itemRoutes);
 
 // Connect to MongoDB
 mongoose
-  .connect(process.env.MONGO_URI) // no need for deprecated options
-  .then(() => console.log("MongoDB connected"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("MongoDB connected")
 
-// Start server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+    // Start server
+    app.listen(process.env.PORT, () => {
+      console.log(`Server is running on port ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => console.error("MongoDB connection error:", err));
