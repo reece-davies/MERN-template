@@ -27,9 +27,9 @@ MERN-template/
 ```
 
 ## Step 0. Repository admin
-Create GitHub repo
-Install Node.js
-Create README.md & .gitignore
+Create GitHub repo.
+Install Node.js.
+Create README.md & .gitignore.
 
 ## Step 1. Initialise backend
 
