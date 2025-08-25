@@ -186,7 +186,7 @@ npm install
 ```
 
 ## Step 5. (Optional) Set up VITE environment variables
-backend/.env
+frontend/.env
 ```
 VITE_API_URL=https://<your-codespace-id>-5000.app.github.dev
 ```
