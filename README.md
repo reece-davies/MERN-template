@@ -185,7 +185,7 @@ npm create vite@latest .   # choose React
 npm install
 ```
 
-## Step 5. (Optional) Create VITE environment variables
+## Step 5. (Optional) Set up VITE environment variables
 backend/.env
 ```
 VITE_API_URL=https://<your-codespace-id>-5000.app.github.dev
